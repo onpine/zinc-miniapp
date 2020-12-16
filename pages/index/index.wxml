@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<!-- 选择 -->
+<scroll-view scroll-x="true" class="port_row">
+  <view 
+  wx:for="{{ports}}" 
+  wx:key="item" 
+  bindtap="handleChangeItem"
+  data-id="{{index}}"
+  class="port_item {{isActive===index?'active':''}}"
+  >{{item}}</view>
+</scroll-view>
+<!-- 概述 -->
+<view class="content">
+  <view class="overview_content">
+    <view class="overview_item">
+      <view class="over_item_title">
+        <text class="iconfont icon-ic_yichang"></text>
+        <text class="port_name">最近高温警告</text>
+      </view>
+      <view class="over_item_text">{{portData.dangerTemperature}}</view>
+    </view>
+    <view class="overview_item">
+      <view class="over_item_title">
+        <text class="iconfont icon-ic_ranliaojiazhu"></text>
+        <text class="port_name">最近加水时间</text>
+      </view>
+      <view class="over_item_text">{{portData.addWaterTime}}</view>
+    </view>
+    <view class="overview2">
+      <view class="overview_item2">
+        <view class="item2_row">
+          <text class="iconfont icon-ic_wendu"></text>
+          <text class="item2_title">最近温度</text>
+        </view>
+        <view class="item2_text">{{portData.temperature}}</view>
+      </view>
+      <view class="overview_item2">
+        <view class="item2_row">
+          <text class="iconfont icon-ic_shengyu"></text>
+          <text class="item2_title">最近湿度</text>
+        </view>
+        <view class="item2_text">{{portData.humidity}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="chart_content"></view>
+</view>
+<!-- 图表 -->
+<view class="chart_btn">
+  <navigator open-type="navigate" url="/pages/chart/chart">
+    <button plain>查看数据统计</button>
+  </navigator>
+</view>

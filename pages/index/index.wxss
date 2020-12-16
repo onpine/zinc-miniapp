@@ -1,0 +1,120 @@
+scroll-view{
+  height: 90rpx;
+  width: 100%;
+  white-space: nowrap;
+}
+.port_row{
+  border-bottom: 1rpx solid #ccc;
+  font-size: 32rpx;
+}
+.port_row .port_item{
+  display: inline-block;
+  padding: 0 20rpx;
+  line-height: 90rpx;
+}
+.port_row .active{
+  font-weight: 600;
+  font-size: 35rpx;
+}
+.content{
+
+}
+.content .overview_content{
+
+}
+.content .overview_content .overview_item{
+  margin: 20rpx 60rpx;
+  padding: 20rpx;
+  /* background-color: #ccc; */
+  border: solid 1rpx #ccc;
+  border-radius: 20rpx;
+}
+
+.content .overview_content .overview_item .over_item_title{
+  line-height: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .overview_content .overview_item .over_item_title text{
+  line-height: 100rpx;
+  height: 100rpx;
+  text-align: left;
+}
+.iconfont{
+  /* height: 100rpx; */
+  font-size: 1.2rem;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.port_name{
+  flex: 1;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.content .overview_content .overview_item .over_item_text{
+  line-height: 80rpx;
+  height: 80rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 30rpx;
+  font-weight: 600;
+  padding:0 10rpx;
+}
+.overview2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 60rpx;
+}
+.overview2 .overview_item2{
+  padding: 20rpx;
+  width: calc(50% - 10rpx);
+  box-sizing: border-box;
+  display: block;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+}
+.overview2 .overview_item2 .item2_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.overview2 .overview_item2 .item2_row text{
+  height: 100rpx;
+}
+.overview2 .overview_item2 .item2_row .item2_title{
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.overview2 .overview_item2 .item2_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.chart_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart_btn navigator{
+  flex: 1;
+  margin: 0 60rpx;
+}
+.chart_btn navigator button{
+  width: 100%;
+  border: 1rpc #ccc solid;
+  font-size: 35rpx;
+}
