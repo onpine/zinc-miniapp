@@ -1,5 +1,5 @@
 exports.request = function(params){
-    const publicUrl = "http://ewc.zinchon.net";
+    const publicUrl = "http://ewc.*.net";
     return new Promise((resolve,reject)=>{
       wx.showLoading({
         title: '加载中',
